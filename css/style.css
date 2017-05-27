@@ -114,3 +114,9 @@ transition: width 1s linear 0.5s, height 2s linear 0.1s;
     -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
     transform: rotate(-45deg);
 }
+
+#background {
+    height: 50vh;
+    background: blue url("../img/pobrane.jpg") no-repeat center top fixed; 
+    background-size: contain;
+}
