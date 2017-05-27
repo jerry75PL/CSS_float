@@ -24,7 +24,7 @@ p:nth-child(1n+3) {
 a {
     width: 200px;
     height: 200px;
-    background-color: orange;    
+    background-color: orange;
     color: blue;
     font-size: 1.2em;
     display: inline-block;
@@ -34,11 +34,83 @@ a {
     /*sposób na centrowanie tekstu ustawienie wysokości line na wysokość boxa text-align: center; line-height: 200px;*/
 }
 
-img{
+img {
     float: right;
 }
 
-p:nth-child(3){
+p:nth-child(3) {
     clear: both;
+}/*dla paragrafu który będzie 3 dzieckiem (nie koniecznie 3 paragrafem*/
+
+#kotek {
+    width: 100px;
+    height: 100px;
+    float: none;
+    margin-bottom: 300px;
+    display: inline-block;
+/*
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+to samo zapis skrócony
+    transition: all 1s linear 0.5s;
+    */
+ 
+transition: width 1s linear 0.5s, height 2s linear 0.1s;   
 }
-/*dla paragrafu który będzie 3 dzieckiem (nie koniecznie 3 paragrafem*/
+
+#kotek:hover {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin:10px auto;
+    
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.width {
+    transition: width 1s linear 0.5s;
+}
+
+.width:hover {
+    width: 300px;
+}
+
+.height {
+    transition: height 1s linear 0.5s;
+}
+
+.height:hover {
+    height: 300px;
+}
+
+.width-height {
+    transition: all 1s linear 0.5s;
+   
+}
+
+.width-height:hover {
+    height: 300px;
+    width: 300px;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+}
