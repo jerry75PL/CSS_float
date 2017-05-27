@@ -1,0 +1,44 @@
+/*
+p {
+    display: inline;
+    font-size: 2em;
+    color: #fff;
+    width: 600px;
+    margin-top: 40px;
+    
+}
+
+p:nth-child(odd) {
+    background-color: blue;
+}
+
+p:nth-child(even) {
+    background-color: orange;
+}
+
+p:nth-child(1n+3) {
+    display: block;
+}
+*/
+
+a {
+    width: 200px;
+    height: 200px;
+    background-color: orange;    
+    color: blue;
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    line-height: 200px;
+    /*sposób na centrowanie tekstu ustawienie wysokości line na wysokość boxa text-align: center; line-height: 200px;*/
+}
+
+img{
+    float: right;
+}
+
+p:nth-child(3){
+    clear: both;
+}
+/*dla paragrafu który będzie 3 dzieckiem (nie koniecznie 3 paragrafem*/
