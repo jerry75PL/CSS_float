@@ -38,9 +38,11 @@ img {
     float: right;
 }
 
+/*
 p:nth-child(3) {
     clear: both;
 }/*dla paragrafu który będzie 3 dzieckiem (nie koniecznie 3 paragrafem*/
+*/
 
 #kotek {
     width: 100px;
@@ -120,3 +122,16 @@ transition: width 1s linear 0.5s, height 2s linear 0.1s;
     background: blue url("../img/pobrane.jpg") no-repeat center top fixed; 
     background-size: contain;
 }
+
+#overflow p {
+    width: 25%;
+    float:left;
+}
+#overflow p:nth-child(even){
+    background-color: antiquewhite;
+}
+
+#overflow p:nth-child(odd){
+    background-color: cyan;
+}
+
